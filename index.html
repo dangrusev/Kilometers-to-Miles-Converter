@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Kilometers to Miles Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size:50px">Kilometers to Miles Converter</h1>
+
+    <div class="converter">
+        <form onsubmit="startConversion(); return false;">
+            <label for="kilometers">Enter Kilometers Here:</label>
+            <input type="number" id="kilometers" name="kilometers" required>
+        </form>
+    </div>
+
+    <div class="buttons">
+        <button type="button" class="convert" onclick="startConversion()">Convert KM</button>
+        <button type="button" class="clear" onclick="clearConversion()">Clear</button>
+    </div>
+
+    <div id="result" class="output">Miles: 0</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
